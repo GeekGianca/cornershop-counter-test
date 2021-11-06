@@ -3,6 +3,8 @@
 ## Before you begin
 You will need to fork this repo and use `/test` as a template, in there you already have all the resources (colors, strings, dimens, etc.), please make sure you read and understand all the requirements in this README. When you finish your test, add your recruiter to your fork and let them know you are done.
 
+APK DOWNLOAD => https://github.com/GeekGianca/cornershop-counter-test/releases/download/v1.0.0/counter-app-v1.0.0.apk
+
 If you have any questions, take a look at the [FAQ section](#faq).
 
 ## The test
