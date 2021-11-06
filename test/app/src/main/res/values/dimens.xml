@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="welcome_logo_size">200dp</dimen>
+    <dimen name="margin_big_2">90dp</dimen>
+    <dimen name="margin_big_1">60dp</dimen>
+    <dimen name="margin_normal_1">16dp</dimen>
+    <dimen name="margin_normal_2">24dp</dimen>
+    <dimen name="margin_normal_3">32dp</dimen>
+    <!-- Custom dp resources -->
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <!-- Custom sp resources -->
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+</resources>

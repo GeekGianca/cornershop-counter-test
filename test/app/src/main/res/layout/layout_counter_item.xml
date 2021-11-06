@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewContent"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/dp_5"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewDataContent"
+        android:padding="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:text="Gian Carlos Cuello"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintEnd_toStartOf="@+id/viewButtons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title">
+
+            <ImageButton
+                android:id="@+id/ibDecrease"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:background="@null"
+                android:src="@drawable/ic_remove"
+                app:layout_constraintBottom_toBottomOf="@+id/counter"
+                app:layout_constraintEnd_toStartOf="@+id/counter"
+                app:layout_constraintTop_toTopOf="@+id/counter"
+                app:tint="@color/orange" />
+
+            <TextView
+                android:id="@+id/counter"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:text="0"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_20"
+                app:layout_constraintBottom_toBottomOf="@+id/ibIncrease"
+                app:layout_constraintEnd_toStartOf="@+id/ibIncrease"
+                app:layout_constraintTop_toTopOf="@+id/ibIncrease" />
+
+            <ImageButton
+                android:id="@+id/ibIncrease"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_0"
+                android:background="@null"
+                android:src="@drawable/ic_plus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/orange" />
+
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupAddOrRemove"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_0"
+                app:constraint_referenced_ids="counter, ibDecrease, ibIncrease" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/selectedItem"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:background="@null"
+            android:padding="@dimen/dp_10"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_check"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
